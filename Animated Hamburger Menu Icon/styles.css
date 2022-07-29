@@ -47,21 +47,15 @@
   background-color: #000;
 }
 
-.btn__hamburger--red {
-  border: 10px solid red;
-  padding-left: 15px;
-  background-color: red;
-}
-
 .btn__hamburger svg {
   display: block;
 }
 
-.btn__hamburgerClose #hamburger-middle {
+.btn__hamburger--closed #hamburger-middle {
   opacity: 0;
 }
 
-.btn__hamburgerClose #hamburger-top,
-.btn__hamburgerClose #hamburger-bottom {
+.btn__hamburger--closed #hamburger-top,
+.btn__hamburger--closed #hamburger-bottom {
   stroke-dashoffset: -45;
 }
