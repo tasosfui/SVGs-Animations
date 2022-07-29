@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#hamburger-top,
+#hamburger-bottom {
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#hamburger-middle {
+  opacity: 1;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+
+.btn__hamburger path {
+  stroke-dasharray: 25 45;
+  stroke-dashoffset: 0;
+}
+
+.btn__hamburger {
+  border: 10px solid black;
+  padding-left: 15px;
+  background-color: #000;
+}
+
+.btn__hamburger--red {
+  border: 10px solid red;
+  padding-left: 15px;
+  background-color: red;
+}
+
+.btn__hamburger svg {
+  display: block;
+}
+
+.btn__hamburgerClose #hamburger-middle {
+  opacity: 0;
+}
+
+.btn__hamburgerClose #hamburger-top,
+.btn__hamburgerClose #hamburger-bottom {
+  stroke-dashoffset: -45;
+}
